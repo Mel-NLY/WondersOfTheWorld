@@ -1,0 +1,68 @@
+﻿body {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 20px;
+    margin: 0 0px;
+}
+.header {
+    margin: 0 auto;
+    padding: 1em 2.7em;
+    text-transform: uppercase;
+    font-weight: bolder;
+}
+.header li {
+    display: inline-block;
+    vertical-align: central;
+    position: relative;
+    padding-bottom: 3%;
+}
+.header a:hover, .header a:focus {
+    color: gold;
+}
+
+.header li a {
+    text-decoration: none;
+    color: black;
+    font-size: 25px;
+    transition: color .35s ease-out;
+}
+.header .logo {
+    border-right: 1px solid black;
+    padding-right: 1em;
+    margin-right: 1em;
+    padding-bottom: 0;
+}
+.header ul ul{
+    visibility: hidden;
+    opacity: 0;
+    margin-left: -1em;
+    width: 250px;
+    position: absolute;
+    background-color: white;
+    color: black;
+}
+.header ul ul li{
+    padding:5%;
+}
+.header ul li:hover ul{
+    border-right: none;
+    visibility: visible;
+    opacity: 0.9;
+    z-index: 9999;
+}
+header .logo {
+    resize: both;
+    height: 120px;
+    width: 155px;
+}
+
+header a {
+    padding-right: 2em;
+}
+
+hr {
+    border: none;
+    margin: 1em auto;
+    height: 1px;
+    background: black;
+    width: 40%;
+}

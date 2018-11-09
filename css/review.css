@@ -1,0 +1,113 @@
+﻿html {
+    border: 40px solid #5eb1bf;
+}
+body {
+    margin-left: 0px;
+    margin-right: 0px;
+}
+h1, h4 {
+    text-align: center;
+}
+h1 {
+    font-size: 400%;
+    margin: 0 0 0 0;
+}
+h4 {
+    font-size: 200%;
+    margin: 0 0 20px 0;
+    color: #666666;
+}
+.quote-marks {
+    padding-left: 5px;
+    padding-right: 5px;
+}
+.formbody{
+    border-top: 1px #e8e8e8 solid;
+    margin: 0 auto;
+    width: 500px;
+    font-size: 150%;
+}
+.formbody > p {
+    display: inline-block;
+}
+.formbody > p > input, option, select{
+    height: 40px;
+    margin: 5px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    text-indent: 10px;
+
+}
+.formbody > p > input, option, select, textarea, fieldset {
+    border: 1px #d84727 solid;
+    box-shadow: 1px 1px #d36850;
+}
+
+.rating {
+    position: center;
+    padding-right: 60px;
+    padding-bottom: 35px;
+}
+/* :not(:checked) is a filter, so that browsers that don’t support :checked don’t 
+   follow these rules. Every browser that supports :checked also supports :not(), so
+   it doesn’t make the test unnecessarily selective */
+.rating:not(:checked) > input {
+    position:absolute;
+    clip:rect(0,0,0,0);
+}
+
+.rating:not(:checked) > label {
+    float: right;
+    width:1em;
+    padding:0 .1em;
+    overflow:hidden;
+    white-space:nowrap;
+    cursor:pointer;
+    font-size:200%;
+    line-height:1.2;
+    color:#ddd;
+    text-shadow:1px 1px #bbb, 2px 2px #666, .1em .1em .2em rgba(0,0,0,.5);
+}
+
+.rating:not(:checked) > label:before {
+    content: '★ ';
+}
+
+.rating > input:checked ~ label {
+    color: #f70;
+    text-shadow:1px 1px #c60, 2px 2px #940, .1em .1em .2em rgba(0,0,0,.5);
+}
+
+.rating:not(:checked) > label:hover,
+.rating:not(:checked) > label:hover ~ label {
+    color: gold;
+    text-shadow:1px 1px goldenrod, 2px 2px #B57340, .1em .1em .2em rgba(0,0,0,.5);
+}
+
+.rating > input:checked + label:hover,
+.rating > input:checked + label:hover ~ label,
+.rating > input:checked ~ label:hover,
+.rating > input:checked ~ label:hover ~ label,
+.rating > label:hover ~ input:checked ~ label {
+    color: #ea0;
+    text-shadow:1px 1px goldenrod, 2px 2px #B57340, .1em .1em .2em rgba(0,0,0,.5);
+}
+textarea {
+    margin: 5px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+#iDate {
+    width: 180px;
+    padding-left: 40px;
+}
+
+button {
+    background-color: #d84727;
+    width: 100px;
+    height: 50px;
+    color: white;
+    font-size: 20px;
+    box-shadow: 2px 3px #d36850;
+}

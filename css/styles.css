@@ -1,0 +1,197 @@
+﻿html {
+    border: 40px solid #5eb1bf;
+}
+.about{
+    width: 70%;
+    margin-left: 15%;
+    text-align: center;
+    position: relative;
+    margin-bottom: 5%;
+}
+.about strong{
+    font-size: 50px;
+}
+.about strong #blue{
+    color: darkblue;
+    font-weight: bolder;
+}
+.about #orange{
+    color: darkorange;
+    font-weight: bolder;
+}
+.about #red{
+    color: red;
+    font-weight: bolder;
+}
+/*World Map*/
+.worldmaplink {
+    position: relative;
+}
+#worldmap {
+    width: 90%;
+    z-index: 1;
+    margin-left:5%;
+}
+#pintm {
+    position: absolute;
+    top: 45%; 
+    left: 66%;
+    width: 3%;
+    z-index: 2;
+    transform-origin: center bottom;
+}
+#pintm:hover{
+    transform: scale(1.5);
+    transition: transform 0.1s ease-in-out;
+}
+#hoverTM {
+    width: 15%;
+    position: absolute;
+    top: 50%;
+    left: 68%;
+    z-index: 100;
+    visibility: hidden;
+}
+
+#pinrc {
+    position: absolute;
+    top: 38%; 
+    left: 49%;
+    width: 3%;
+    z-index: 2;
+    transform-origin: center bottom;
+}
+#pinrc:hover{
+    transform: scale(1.5);
+    transition: transform 0.1s ease-in-out;
+}
+#hoverRC {
+    width: 15%;
+    position: absolute;
+    top: 44%;
+    left: 44%;
+    z-index: 100;
+    visibility: hidden;
+}
+
+#pinmp {
+    position: absolute;
+    top: 66%; 
+    left: 27%;
+    width: 3%;
+    z-index: 2;
+    transform-origin: center bottom;
+}
+#pinmp:hover{
+    transform: scale(1.5);
+    transition: transform 0.1s ease-in-out;
+}
+#hoverMP {
+    width: 15%;
+    position: absolute;
+    top: 70%;
+    left: 12%;
+    z-index: 100;
+    visibility: hidden;
+}
+
+#pinsh {
+    position: absolute;
+    top: 32%; 
+    left: 45%;
+    width: 3%;
+    z-index: 2;
+    transform-origin: center bottom;
+}
+#pinsh:hover{
+    transform: scale(1.5);
+    transition: transform 0.1s ease-in-out;
+}
+#hoverSH {
+    width: 15%;
+    position: absolute;
+    top: 7%;
+    left: 30%;
+    z-index: 100;
+    visibility: hidden;
+}
+
+
+/*Top 4 Wonders*/
+.homesection1 {
+    background-color: white;
+    font: Garamond;
+    margin-left: 9.7%;
+}
+#homesection1header{
+    font-weight:900;
+    font-size: 50px;
+    text-align: center;
+    color: black;
+    margin-top: 5%;
+}
+#homesection1table {
+    width: 20%;
+    height: 550px;
+    border-collapse: collapse;
+    margin: 1%;
+}
+#homesection1table tr{
+    text-align:left;
+    margin-top: 3%;
+}
+#homesection1table td a {
+    text-decoration: none;
+}
+#homesection1table tr:nth-of-type(odd){
+    color: black;
+}
+#homesection1table tr:nth-of-type(even){
+    color: white;
+}
+#homesection1table tr:nth-of-type(odd) a{
+    color: black;
+}
+#homesection1table tr:nth-of-type(even) a{
+    color: white;
+}
+#homesection1table td a :hover{
+    color: gold;
+}
+#homesection1table td b {
+    font-size: 30px;
+}
+#homesection1pic {
+    width: 100%;
+    height: 225px;
+    display: block;
+    top:0;
+}
+#homesection1TM {
+    background-color: #ef7b45;
+    padding: 20px;
+    height: 56%;
+}
+#homesection1RC {
+    background-color: #d84727;
+    padding: 20px;
+    height: 56%;
+}
+#homesection1MP {
+    background-color: #cdedf6;
+    padding: 20px;
+    height: 56%;
+}
+#homesection1S {
+    background-color: #042a2b;
+    padding: 20px;
+    height: 56%;
+}
+.sep{
+    height: 1px;
+    background-color: grey;
+    width: 80%;
+    margin-top: 2%;
+    margin-bottom: -5%;
+    margin-left: 10%;
+}

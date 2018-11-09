@@ -1,0 +1,287 @@
+﻿html {
+    border: 40px solid #ef7b45;
+}
+body {
+    font-family: 'Cormorant Garamond', serif;
+    overflow-x: hidden;
+}
+#blue{
+    color: blue;
+}
+#purple {
+    color: purple;
+}
+#red{
+    color: red;
+}
+#green{
+    color: darkgreen;
+}
+.TajMahalsection1 {
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    padding-top: 10%;
+    background-image: url(../media/TajMahal/Taj_Mahal_Home.jpg);
+    vertical-align: middle;
+}
+.TajMahalsection1 .TajMahalcontent1 {
+	text-align: center;
+}
+.TajMahalsection1 .TajMahalcontent1 h2 {
+	font-size: 30px;
+	font-weight: bold;
+	color: #fff;
+    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+}
+.TajMahalsection1 .TajMahalcontent1 h2 span {
+    font-size: 50px;
+	font-weight: bolder;
+	color: white;
+}
+.TajMahalsection1 .TajMahalcontent1 p {
+	color: #fff;
+	font-size: 25px;
+	line-height: 24px;
+	padding: 0px 25%;
+    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+}
+.TajMahalsection1 .TajMahalcontent1 .TajMahalbutton1 {
+	margin-top: 25px;
+}
+.TajMahalbutton1{
+    padding-bottom: 10%;
+}
+.TajMahalbutton1 a {
+    display: inline-block;
+    background-color: #fff;
+    font-size: 13px;
+    padding: 12px 18px;
+    color: #121212;
+    font-weight: 500;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    text-decoration: none;
+    border-radius: 20px;
+}
+.TajMahalbutton1 a:hover{
+    transform: scale(1.2);
+    transition: transform 0.1s ease-in-out;
+    background-color:black;
+    color: white;
+}
+.TajMahalPageHeader {
+    margin-top: 80px;
+    font-size: 40px;
+    position: inherit;
+    text-align: center;
+}
+.TajMahalPageHeader h1{
+    margin-bottom: 50px;
+}
+.gridbox {
+    background-color: #fff;
+    color: black;
+    border-radius: 5px;
+    padding: 20px;
+}
+a > .gridbox:hover{
+    border: solid 5px black;
+}
+@media (min-width: 300px) {
+    .TajMahalPageHeader {
+        grid-template-columns: 200px;
+        grid-template-rows: 20% 20% 20% 20%;
+    }
+}
+
+@media (min-width: 768px) {
+    .TajMahalPageHeader {
+        grid-template-columns: 200px 200px;
+        grid-template-rows: 20% 20%;
+    }
+}
+
+@media (min-width: 1400px) {
+    .TajMahalPageHeader {
+        grid-template-columns: 200px 200px 200px 200px;
+        grid-template-rows: 20% 20%;
+    }
+}
+#spacingHistory{
+    float: left;
+    width: 100%;
+    height: 10px;
+}
+#spacingFunfacts {
+    float: left;
+    width: 100%;
+    height: 20px;
+}
+#spacingTours {
+    float: left;
+    width: 100%;
+    height: 25px;
+}
+.TajMahalHistory {
+    text-align: center;
+    float: right;
+    width: 100%;
+    height: auto;
+    float: right;
+}
+.TajMahalHistory h4{
+    font-size: 50px;
+    margin: 20px;
+}
+.TajMahalHistory p{
+    margin: 30px;
+    margin-left: 60px;
+    margin-right: 60px;
+}
+#Information {
+    padding-left: 100px;
+    text-align: left;
+}
+video {
+    float: right;
+    margin: 5% 0;
+    width: 100%;
+}
+.TajMahalFunfacts{
+    width:100%;
+    height: 50%;
+    float:right;
+}
+.TajMahalFunfacts #slides {
+    width: 100%;
+    height: 300px;
+    padding: 0px;
+    margin: 0px;
+    list-style-type: none;
+    position:relative;
+}
+
+.TajMahalFunfacts .slide {
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    width: 90%;
+    height: 100%;
+    margin-left: 5%;
+    border: solid 4px black;
+    border-radius: 50%;
+    background-color: #ffaa5c;
+    opacity: 0;
+    z-index: 1;
+    -webkit-transition: opacity 1s;
+    -moz-transition: opacity 1s;
+    -o-transition: opacity 1s;
+    transition: opacity 1s;
+    text-align: center;
+}
+.TajMahalFunfacts .slide h2{
+    font-size: 70px;
+    font-weight: bolder;
+}
+.TajahalFunFacts .slide{
+    font-size: 50px;
+}
+.TajMahalFunfacts .showing {
+    opacity: 1;
+    z-index: 2;
+}
+.TourHeader{
+    font-weight: bolder;
+    font-size: 50px;
+    float:left;
+    width: 90%;
+    margin: 5% 0% 5% 5%;
+    text-align:center;
+}
+.TajMahalTours{
+  display: grid;
+  width: 100%;
+  height: 60%;
+  grid-template-columns: 300px 300px 300px 300px;
+  grid-template-rows: 30%;
+  grid-gap: 10px;
+  color: #444;
+  margin-bottom: 10%;
+  justify-content: center;
+}
+.box:hover , .box:hover .TajMahalbutton4{
+    border: solid black;
+    border-width: 2px;
+}
+.TajMahalTours img{
+    width:100%;
+    height: 200px;
+}
+.TajMahalTours span{
+    color:red;
+}
+.box {
+  background-color: #e6dfca;
+  color: black;
+  border-radius: 5px;
+  padding: 20px;
+}
+@media (min-width: 300px) {
+    .TajMahalTours {
+        grid-template-columns: 300px;
+        grid-template-rows: 30% 30% 30% 30%;
+    }
+}
+@media (min-width: 768px) {
+    .TajMahalTours {
+        grid-template-columns: 300px 300px;
+        grid-template-rows: 30% 30%;
+    }
+}
+@media (min-width: 1400px) {
+    .TajMahalTours {
+        grid-template-columns: 300px 300px 300px 300px;
+        grid-template-rows: 30%;
+    }
+}
+.TajMahalbutton4 {
+    display: inline-block;
+    background-color: white;
+    font-size: 11px;
+    padding: 12px 18px;
+    color: black;
+    font-weight: bolder;
+    text-transform: uppercase;
+    text-decoration: none;
+    border-radius: 30px;
+    margin: 10px;
+}
+.back {
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    padding-right: 50px;
+    padding-bottom: 50px;
+}
+.back a {
+    display: inline-block;
+    background-color: #5eb1bf;
+    font-size: 13px;
+    padding: 15px 25px;
+    font-weight: bolder;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    border-radius: 20%;
+    text-decoration: white;
+    border: solid black;
+}
+.back a:hover{
+    transform: scale(1.2);
+    transition: transform 0.1s ease-in-out;
+    background-color: black;
+    color: white;
+}
+.TajMahalLocation{
+    margin-bottom: -5%;
+}

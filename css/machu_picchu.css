@@ -1,0 +1,481 @@
+﻿html {
+    border: 30px solid #042844;
+}
+
+body {
+    font: 400 20px Cormorant Garamond, serif;
+    padding: 10px;
+    margin: 10px 20px;
+}
+
+h2 {
+   font-size: 40px;
+}
+
+hr {
+    border: none;
+    margin: auto;
+    height: 1px;
+    background: black;
+    width: 40%;
+}
+
+.intro {
+    text-align: center;
+}
+
+
+.vid_caption{
+    border-left: 1.5px solid black;
+    display: block;
+    position: relative;
+    float: right;
+    width: 720px;
+    height: 135px;
+    text-align: center;
+    margin-top: 103px;
+    font-size: 25px;
+}
+
+.vid_caption p{
+    padding-top: 40px;
+}
+
+.history{
+    font-size: 20px;
+}
+
+.quote{
+    text-align: center;
+}
+
+.quote_text{
+    margin-top: -150px;
+    font-size: 1.2em;
+}
+
+.quotation{
+    font-size: 5em;
+}
+
+.author{
+    font-size: 1.5em; 
+}
+
+.btn {
+    display: inline-block;
+    padding: 13px 20px;
+    color: black;
+    text-decoration: none;
+    position: relative;
+    background: transparent;
+    border: 1px solid black;
+    font: 10px "Oswald", sans-serif;
+    letter-spacing: 0.4em;
+    text-align: center;
+    text-indent: 2px;
+    text-transform: uppercase;
+}
+
+.btn:hover {
+    color: white;
+    background: #d84727;
+    transition: color 0.35s ease-out, background 0.35s ease-in-out;
+    cursor: pointer;
+}
+
+.button {
+    display: inline-block;
+    padding: 13px 20px;
+    color: black;
+    text-decoration: none;
+    position: relative;
+    background: transparent;
+    border: 1px solid black;
+    font: 10px "Oswald", sans-serif;
+    letter-spacing: 0.4em;
+    text-align: center;
+    text-indent: 2px;
+    text-transform: uppercase;
+}
+
+    .button:hover {
+        color: white;
+        background: #d84727;
+        transition: color 0.35s ease-out, background 0.35s ease-in-out;
+        cursor: pointer;
+    }
+
+.tour_selection {    
+    text-align: center;
+    margin: auto;
+}
+
+#tour_selection::after {
+    content: "⋮";
+    display: block;
+    text-align: center;
+    font-size: 3em;
+    line-height: 1.15152;
+    padding-top: 0.863636em;
+}
+
+#daytrip::after {
+    content: "⋮";
+    display: block;
+    text-align: center;
+    font-size: 3em;
+    line-height: 1.15152;
+    padding-top: 0.863636em;
+}
+
+#daytrek::after {
+    content: "⋮";
+    display: block;
+    text-align: center;
+    font-size: 3em;
+    line-height: 1.15152;
+    padding-top: 0.863636em;
+}
+
+.trip_info{
+    margin: 20px 100px 20px 20px;
+}
+
+.btns{
+    border: 2px solid black;
+    display: inline-block;
+    margin: 40px;
+    padding: 10px;
+}
+
+#enquiry{
+    display: block;
+    float: right;
+    margin-bottom: 20px;
+}
+
+table{
+    border-collapse: collapse;
+    margin: 20px auto;
+}
+
+table tr td{
+    border: 2px solid black;
+    padding: 10px;
+}
+
+table th{
+    border: 2px solid black;
+    padding: 10px;
+}
+
+/*Anchor Menu
+    ---------------------------------
+*/
+
+.nav {
+    position: fixed;
+    display: inline-block;
+    width: 16px;
+    height: auto;
+    top: 50%;
+    margin-top: -50px;
+    right: 60px;
+}
+
+    .nav:before {
+        position: absolute;
+        content: " ";
+        border: 1.5px solid #ddd;
+        height: 130px;
+        right: -9px;
+        top: 32px;
+    }
+
+    .nav ul {
+        position: relative;
+        display: inline-block;
+        margin: 0;
+        padding: 0;
+        list-style: none;
+    }
+
+    .nav li {
+        position: relative;
+        display: block;
+        float: left;
+        margin: 16px;
+        width: 16px;
+        height: 16px;
+    }
+
+        .nav li a {
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            outline: none;
+            border-radius: 50%;
+            background-color: #fff;
+            text-indent: -999em;
+            direction: ltr;
+            cursor: pointer;
+            position: absolute;
+            box-shadow: inset 0 0 0 1px #ccc;
+            transition: opacity 0.3s ease;
+        }
+
+            .nav li a:focus {
+                outline: none;
+            }
+
+            .nav li a::after {
+                content: '';
+                position: absolute;
+                width: 100%;
+                height: 100%;
+                left: inherit;
+                border-radius: inherit;
+                background-color: #d84727;
+                transform: scale(0);
+                transform-origin: 50% 50%;
+                transition: transform 0.3s ease;
+            }
+
+
+            .nav li a.current::after {
+                transform: scale(1);
+            }
+
+            .nav li a.current span {
+                font-size: 22px;
+                line-height: 12px;
+                color: black;
+                opacity: 1.0;
+            }
+
+            .nav li a span {
+                display: block;
+                position: absolute;
+                line-height: 14px;
+                color: gray;
+                opacity: 0.6;
+                width: 100%;
+                height: 16px;
+                right: 24px;
+                text-align: right;
+            }
+
+/*Slideshow
+    ---------------------------------
+*/
+
+.slideshow {
+    overflow: hidden;
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    z-index: 1;
+}
+
+    .slideshow .slideshow-inner {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+    }
+
+    .slideshow .slides {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        z-index: 1;
+    }
+
+    .slideshow .slide {
+        display: none;
+        overflow: hidden;
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        z-index: 1;
+        opacity: 0;
+        transition: opacity 0.3s ease;
+    }
+
+        .slideshow .slide.is-active {
+            display: block;
+        }
+
+        .slideshow .slide.is-loaded {
+            opacity: 1;
+        }
+
+        .slideshow .slide .caption {
+            padding: 0 100px;
+        }
+
+        .slideshow .slide .image-container {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-position: center;
+            z-index: 1;
+            background-size: cover;
+            image-rendering: optimizeQuality;
+        }
+
+            .slideshow .slide .image-container::before {
+                content: "";
+                display: block;
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+                background: white;
+                background: rgba(0, 0, 0, 0.5);
+            }
+
+        .slideshow .slide .image {
+            width: 100%;
+            object-fit: cover;
+            height: 100%;
+        }
+
+    .slideshow .slide-content {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        z-index: 2;
+        color: #fff;
+        text-align: center;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .slideshow .slide .title {
+        margin: 0 auto 15px;
+        max-width: 1000px;
+        font: 300 41.66667px "Oswald", sans-serif;
+        letter-spacing: 0.35em;
+        text-transform: uppercase;
+    }
+
+    .slideshow .slide .text {
+        margin: 0 auto;
+        max-width: 1000px;
+        font-size: 18px;
+        line-height: 1.4;
+    }
+
+    .slideshow .slide .btn {
+        margin: 15px 0 0;
+        border-color: #fff;
+    }
+
+        .slideshow .slide .btn::before {
+            background: #fff;
+        }
+
+    .slideshow .pagination {
+        position: absolute;
+        bottom: 35px;
+        left: 0;
+        width: 100%;
+        height: 12px;
+        cursor: default;
+        z-index: 2;
+        text-align: center;
+    }
+
+        .slideshow .pagination .item {
+            display: inline-block;
+            padding: 15px 5px;
+            position: relative;
+            width: 46px;
+            height: 32px;
+            cursor: pointer;
+            text-indent: -999em;
+            direction: ltr;
+            z-index: 1;
+        }
+
+            .slideshow .pagination .item + .page {
+                margin-left: -2px;
+            }
+
+            .slideshow .pagination .item::before {
+                content: "";
+                display: block;
+                position: absolute;
+                top: 15px;
+                left: 5px;
+                width: 36px;
+                height: 2px;
+                background: black;
+                background: rgba(255, 255, 255, 0.5);
+                transition: background 0.2s ease;
+            }
+
+            .slideshow .pagination .item::after {
+                width: 0;
+                background: #fff;
+                z-index: 2;
+                transition: width 0.2s ease;
+            }
+
+            .slideshow .pagination .item:hover::before, .slideshow .pagination .item.is-active::before {
+                background-color: #fff;
+            }
+    
+@media only screen and (max-width: 1440px){
+    iframe {width: 75%}
+    body{
+        font-size: 18px;
+    }
+    h2{
+        font-size: 30px;
+    }
+}
+
+@media only screen and (max-width: 960px){
+    iframe {width: 50%}
+    body {
+        font-size: 16px;
+    }
+    h2{
+        font-size: 26px;
+    }
+}
+
+@media only screen and (max-width: 768px){
+    iframe {width: 40%}
+    body {
+        font-size: 14px;
+    }
+    h2 {
+        font-size: 22px;
+    }
+}
+
+@media only screen and (max-width: 480px){
+    iframe {width: 25%}
+    body {
+        font-size: 12px;
+    }
+    h2{
+        font-size: 18px;
+    }
+}

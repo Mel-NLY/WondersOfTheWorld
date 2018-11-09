@@ -1,0 +1,129 @@
+﻿#toursform {
+    width: 100%;
+    height: auto;
+    display: inline-block;
+    font-family: 'Cormorant Garamond', serif;
+    font-weight: bold;
+}
+#toursform h1 {
+    margin-top: 30px;
+    text-align:center;
+    font-size: 60px;
+}
+#toursform h4 {
+    margin-bottom: 30px;
+    text-align: center;
+    font-size: 30px;
+    font-style:italic;
+    color: grey;
+}
+#sep {
+    height: 1px;
+    background: grey;
+    width: 90%;
+    margin-left:0px;
+    margin-right:0px;
+    margin: 30px auto;
+}
+#formbody{
+    margin-left: 20%;
+}
+#formbody input, textarea, select, option, button {
+    background: none;
+    border-top: #FFCC33 1px solid ;
+    border-left: #FFCC33 1px solid ;
+    border-bottom: #FFCC33 2px solid;
+    border-right: #FFCC33 2px solid ;
+    border-radius: 2px;
+}
+#formbody label, input, textarea, select, button {
+    height: 40px;
+    margin: 5px;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    text-indent: 10px;
+}
+#Title{
+    width: 80px;
+}
+#FirstName{
+    width: 200px;
+}
+#LastName {
+    width: 250px;
+}
+#Nationality{
+    width: 400px;
+}
+#DOB{
+    width:150px;
+}
+label span{
+    font-size: 12px;
+    color: grey;
+}
+#Email{
+    width: 400px;
+}
+#telephone{
+    width: 100px;
+}
+#Address{
+    width: 450px;
+    height: 100px;
+}
+#Zip{
+    width:100px;
+}
+#destinationcountry{
+    width: 70%;
+}
+#date {
+    width: 150px;
+}
+#Duration{
+    width: 150px;
+}
+#Remarks {
+    width: 450px;
+    height: 100px;
+}
+#formbody button{
+    background-color: #FFCC33;
+    text-indent: 0px;
+    width: 100px;
+    text-align: center;
+    font-weight: bolder;
+    margin-top: 30px;
+    border-radius: 5%;
+    font-size: 20px;
+}
+#formbody button:hover{
+    background-color: white;
+    border: solid 5px #FFCC33;
+    color: #FFCC33;
+}
+.glass {
+    position: fixed;
+    left: 0;
+    top: 0;
+    background-color: rgba(225,225,225,.7);
+    height: 100vh;
+    width: 100vw;
+    z-index: 100;
+}
+
+.dialog {
+    position:relative;
+    height: 25%;
+    width: 40%;
+    margin: 0 auto;
+    padding: 15px;
+    border: 1px solid black;
+    background-color: white;
+}
+#dialogOK{
+    position: absolute;
+    right: 1%;
+    bottom: 0.5%;
+}

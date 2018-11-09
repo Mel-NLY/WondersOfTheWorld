@@ -1,0 +1,163 @@
+﻿html {
+    border: 40px solid #ef7b45;
+}
+.slideshow {
+    width: 90%;
+    height: 90%;
+    margin-left:5%;
+    margin-bottom: 5%;
+}
+.Slides {
+    margin: 0;
+    margin: auto;
+    width: 100%;
+    height: 100%;
+}
+.heading{
+    font-weight: bolder;
+    font-size: 40px;
+    width: 90%;
+    margin-left: 5%;
+}
+.heading span{
+    color: red;
+}
+.destination{
+    font-size: 25px;
+    color: black;
+    width:100%;
+    margin-left: 5%;
+}
+.destination span{
+    color: #ef7b45;
+    font-size: 30px;
+}
+.destination ul{
+    margin-top: -10px;
+    margin-left: -20px;
+}
+.TMTour1 {
+    width: 100%;
+    height: auto;
+    margin-top: 50px;
+}
+.TMTour1 table{
+    width: 90%;
+    margin-left:5%;
+    border-collapse: collapse;
+}
+.TMTour1 caption{
+    font-weight: bold;
+    font-size: 30px;
+    margin: 20px;
+    color: black;
+}
+.TMTour1 table tr td{
+    border: 5px solid black;
+    padding: 10px;
+    height: auto;
+}
+.TMTour1 table tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+.TMTour1 table tr:nth-child(odd) {
+    background-color: white;
+}
+.TMTour1 table th{
+    border: 5px solid black;
+    padding: 10px;
+    color: white;
+    background-color: #ef7b45;
+}
+.TajMahalbutton2 a {
+    display: inline-block;
+    background-color: grey;
+    font-size: 13px;
+    padding: 12px 18px;
+    color: white;
+    font-weight: 500;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    text-decoration: none;
+    border-radius: 30px;
+    margin: 30px;
+    float: right;
+}
+.packagedetails{
+    font-size: 25px;
+    color: black;
+    width:90%;
+    margin-left: 5%;
+    margin-top: 3%;
+}
+.packagedetails span{
+    color: #ef7b45;
+    font-size: 30px;
+}
+.packagedetails ul{
+    margin-top: -10px;
+    margin-left: -20px;
+}
+.packagefees {
+    height: auto;
+    font-size: 25px;
+    color: black;
+    width: 90%;
+    margin-left: 5%;
+    margin-top: 10%;
+}
+.packagefees span {
+    color: #ef7b45;
+    font-size: 30px;
+}
+.packagefees table{
+    width: 90%;
+    margin-left:5%;
+    border-collapse: collapse;
+}
+.packagefees table th {
+    border: 5px solid black;
+    background-color: #ef7b45;
+}
+.packagefees table td{
+    text-align: center;
+    border: 5px solid black;
+}
+.TajMahalbutton3 a {
+    font-family: Garamond;
+    display: inline-block;
+    background-color: #ef7b45;
+    font-size: 13px;
+    font-weight: bolder;
+    padding: 12px 18px;
+    color: white;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    text-decoration: none;
+    border-radius: 30px;
+    width: 80%;
+    margin-left: 10%;
+    -webkit-animation: bounce .3s infinite alternate;
+    -moz-animation: bounce .3s infinite alternate;
+    animation: bounce .3s infinite alternate;
+}
+@-webkit-keyframes bounce {
+    to {
+        -webkit-transform: scale(1.01);
+    }
+}
+
+@-moz-keyframes bounce {
+    to {
+        -moz-transform: scale(1.01);
+    }
+}
+
+@keyframes bounce {
+    to {
+        transform: scale(1.01);
+    }
+}
+.line{
+    margin: 20px;
+}

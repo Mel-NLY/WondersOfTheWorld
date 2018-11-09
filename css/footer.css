@@ -1,0 +1,64 @@
+﻿p {
+    margin-top: 0;
+}
+footer {
+    float:right;
+    background-color: white;
+    box-sizing: border-box;
+    width: 100%;
+    text-align: left;
+    font: bold 16px sans-serif;
+    /*padding: 55px 50px;*/
+    margin-top: 80px;
+    margin-bottom: 40px;   
+    color: black;
+    vertical-align: top;
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 100%;
+}
+
+.f-container {
+    display: grid;
+    grid-template-columns: 20% 30% 30%;
+    height: 100px;
+    justify-content: center;
+}
+.f-center {
+    display: inline-block;
+}
+.vl {
+    border-right: 1px black solid;
+}
+.link {
+    padding: 5px;
+}
+.SocialMedia {
+    display: inline-block;
+    float: right;
+}
+.f-right {
+    line-height: 50px;
+    margin-top: 10px;
+    justify-content: center;
+}
+.f-right p{
+    float:right;
+}
+a:link, a:visited {
+    text-decoration: none;
+    color: black;
+}
+
+a:hover, a:active {
+    color: gray
+}
+
+.f-companyname {
+    color: #8f9296;
+    font-size: 120%;
+    font-weight: normal;
+    margin: 0;
+    font-weight: bold;
+    padding-top: 20px;
+    float: left;
+}

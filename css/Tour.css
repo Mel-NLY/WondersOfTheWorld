@@ -1,0 +1,103 @@
+﻿html {
+    border: 40px solid #042a2b;
+}
+h2 
+{
+    text-align: center;
+    font-family: 'Baskerville Old Face';
+    font-size: 50px;
+    font-weight: bolder;
+    font-style: italic;
+}
+
+h3
+{
+    text-align:center;
+    font-size: 30px;
+    color: darkcyan;
+}
+
+#tour
+{
+    float: left;
+}
+
+#tour #tab
+{
+    border-collapse: collapse;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 15px;
+}
+
+#tab, th, td 
+{
+    border-collapse: collapse;
+    border: 5px solid brown;
+    height: 50px;
+}
+
+th 
+{
+    width: 70px;
+}
+
+td
+{
+    padding-left:20px;
+    padding-right: 20px;
+}
+
+tr
+{
+    width: 500px;
+    height: 80px;
+}
+
+#price
+{
+    float: right;
+    border-collapse:collapse;
+    border-color: black;
+    border: 1px solid;
+}
+
+#price p
+{
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    padding-left: 30px;
+    padding-right: 30px;
+}
+
+h4
+{
+    font-size: 25px;
+}
+
+#sep
+{
+    padding-top: 50px;
+}
+
+#sep2 {
+    padding-top: 50px;
+}
+
+#sep3 {
+    padding-top: 50px;
+}
+#tourbtn {
+    margin-top: 30px;
+    height: 120px;
+    width: 100%;
+    margin-left: 50%;
+    border-radius: 30px;
+    text-align: center;
+    font-size: 20px;
+    cursor: pointer;
+    font-weight: bold;
+}
+video {
+    width: 90%;
+    margin-left: 5%;
+}

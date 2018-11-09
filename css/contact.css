@@ -1,0 +1,69 @@
+﻿h1
+{
+    top: 0;
+    text-align: center;
+    color: cyan;
+}
+
+.contact 
+{
+    background-color: lightcyan;
+    padding-left: 100px;
+    border: 10px solid;
+    border-color: black;
+    border-radius: 30px;
+    max-width: 50%;
+    margin: 20px auto;
+}
+.section1 
+{
+    float: left;
+    width: 48%;
+    margin-bottom: 1em;
+    margin-right: 2%;
+}
+
+.section2 
+{
+    float: right;
+    width: 50%;
+}
+
+#enquiry
+{
+    border-radius: 20px;
+    width: 250px;
+    height: 150px;
+}
+
+#phone, #na, #mail
+{
+    border-radius: 5px;
+    height: 20px;
+}
+
+.submit {
+    width: 650px;
+    color: white;
+    background-color: darkgrey;
+    cursor: pointer;
+    font-size: 16px;
+    padding: 12px 50px;
+    border-radius: 12px;
+    float: left; 
+}
+
+.submit:hover
+{
+    box-shadow: 0 1px 1px 1px #808080;
+}
+
+#map
+{
+    width: 650px;
+}
+
+p
+{
+    font-weight: bold;
+}
