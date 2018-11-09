@@ -1,0 +1,130 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <meta author="FEDTeam3" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/styles.css">
+    <link href="https://fonts.googleapis.com/css?family=Cormorant+Garamond|Montserrat" rel="stylesheet">
+    <link rel="icon" type="image/x-icon" href="./media/favicon.png" />
+    <script src="https://www.w3schools.com/lib/w3.js"></script>
+    <script src="./js/script.js"></script>
+    <title>W.O.T.W | Travel with You</title>
+</head>
+<body class="index">
+    <div w3-include-HTML="header.html"></div>
+    <script>
+        w3.includeHTML();
+    </script>
+    <div class="intro">
+        <div class="about">
+            <strong><span id="blue">Who</span> we are</strong><br />
+            W.O.T.W is an online tour booking website, more specially tours for Wonders of the world. We are here to ensure that you get 110% of experience from the Wonders.
+        </div>
+        <div class="about">
+            <strong><span id="blue">Why</span> choose <span id="orange">W.O.T.W</span></strong><br />
+            We source for only the best stays and transportation to make sure that you enjoy your trip.
+            We offer monthly promotions and all year around, seniors, children and infants get to travel with up to 70% off their tour package fees. 
+            Also, you get the chance to customise your own tour!
+        </div>
+    </div>
+    <<hr />
+    <div class="about"><strong><span id="orange">Get started</span> by <span id="blue">hovering</span> over the <span id="red">map pins!</span></strong></div>
+    <div class="worldmaplink">
+        <img id="worldmap" src="./media/map.png" alt="WorldMap" />
+        <a href="./TajMahal.html" onmouseover="onhoverimageTM()" onmouseout="outhoverimageTM()">
+            <img id="pintm" src="./media/map_pin.png" alt="Map_pin" />
+            <img src="./TajMahal.html" id="hoverTM"  />
+        </a>
+        <a href="./RomanColosseum.html" onmouseover="onhoverimageRC()" onmouseout="outhoverimageRC()">
+            <img id="pinrc" src="./media/map_pin.png" alt="Map_pin" />
+            <img src="./RomanColosseum.html" id="hoverRC" />
+        </a>
+        <a href="./MachuPicchu.html" onmouseover="onhoverimageMP()" onmouseout="outhoverimageMP()">
+            <img id="pinmp" src="./media/map_pin.png" alt="Map_pin" />
+            <img src="./MachuPicchu.html" id="hoverMP" />
+        </a>
+        <a href="./Stonehenge.html" onmouseover="onhoverimageSH()" onmouseout="outhoverimageSH()">
+            <img id="pinsh" src="./media/map_pin.png" alt="Map_pin" />
+            <img src="./Stonehenge.html" id="hoverSH" />
+        </a>
+    </div>
+    <br />
+    <div class="sep"> </div>
+    <br />
+    <p id="homesection1header">Top 4 Wonders</p>
+    <div class="homesection1">
+        <table id="homesection1table" style="float:left;">
+            <tr>
+                <td id="homesection1TM" >
+                    <a href="./TajMahal.html">
+                        <b>Taj Mahal</b><br />
+                        History<br />
+                        Funfacts<br />
+                        Tour Packages<br />
+                        Location
+                    </a>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <a href="./TajMahal.html"><img id="homesection1pic" src="./media/TajMahal.jpg" alt="Taj Mahal" /></a>
+                </td>
+            </tr>
+        </table>
+        <table id="homesection1table" style="float:left;">
+            <tr>
+                <td>
+                    <a href="./RomanColosseum.html"><img id="homesection1pic" src="./media/RomanColosseum.jpg" alt="Colosseum In Rome" /></a>
+                </td>
+            </tr>
+            <tr>
+                <td id="homesection1RC" scope="col">
+                    <a href="./RomanColosseum.html"><b>Roman Colosseum</b></a><br />
+                    History<br />
+                    Funfacts<br />
+                    Tour Packages<br />
+                    Location
+                </td>
+            </tr>
+        </table>
+        <table id="homesection1table" style="float:left;">
+            <tr>
+                <td id="homesection1MP">
+                    <a href="./MachuPicchu.html"><b>Machu Picchu</b></a><br />
+                    History<br />
+                    Funfacts<br />
+                    Tour Packages<br />
+                    Location
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <a href="./MachuPicchu.html"><img id="homesection1pic" src="./media/MachuPicchu.jpg" alt="Machu Picchu" /></a>
+                </td>
+            </tr>
+        </table>
+        <table id="homesection1table" style="float:left;">
+            <tr>
+                <td>
+                    <a href="./Stonehenge.html"><img id="homesection1pic" src="./media/Stonehenge.jpg" alt="Stonehenge" /></a>
+                </td>
+            </tr>
+            <tr>
+                <td id="homesection1S">
+                    <a href="./Stonehenge.html"><b>Stonehenge</b></a><br />
+                    History<br />
+                    Funfacts<br />
+                    Tour Packages<br />
+                    Location
+                </td>
+            </tr>
+        </table>
+    </div>
+    <div w3-include-HTML="footer.html"></div>
+    <script>
+        w3.includeHTML();
+    </script>
+</body>
+</html>

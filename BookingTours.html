@@ -1,0 +1,123 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <meta author="Melissa Ng" />
+    <meta description="FEDAssignment" />
+    <link rel="stylesheet" href="./css/styles.css" />
+    <link rel="stylesheet" href="./css/bookingform.css">
+    <link rel="icon" type="image/x-icon" href="./media/favicon.png" />
+    <link href="https://fonts.googleapis.com/css?family=Cormorant+Garamond|Montserrat" rel="stylesheet">
+    <script src="https://www.w3schools.com/lib/w3.js"></script>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+    <script src="/js/bookingform.js"></script>
+    <title>W.O.T.W | Enquiry & Booking Tours Form</title>
+</head>
+<body >
+    <div w3-include-HTML="header.html"></div>
+    <script>
+        w3.includeHTML();
+    </script>
+    <form id="toursform" onsubmit="submitpopup()">
+        <h1>Enquire & Book Tours</h1>
+        <h4>"Fulfil the dream of travelling the world with us"</h4>
+        <div id="sep"></div>
+        <div id="formbody">
+            <label>Full Name *</label><br />
+            <select id="Title" name="Title" required="">
+                <option value="">Title</option>
+                <option value="Mr">Mr</option>
+                <option value="Mrs">Mrs</option>
+                <option value="Ms">Ms</option>
+            </select>
+            <input id="FirstName" name="FirstName" type="text" autocomplete="on" placeholder="First Name" required="" />
+            <input id="LastName" name="LastName" type="text" autocomplete="on" placeholder="Last Name" required="" /><br />
+
+            <label>Nationality *</label><br />
+            <input id="Nationality" name="Nationality" type="text" autocomplete="on" placeholder="eg.Singaporean" required="" /><br />
+
+            <label for="DOB">Date of Birth *<span>  You must be 18 years or older to enquire or book a tour</span></label><br />
+            <input type="date" id="DOB" name="DOB" min="1800-01-01" max="2017-01-01" placeholder="mm/dd/yy" required="" /><br />
+
+            <label for="Email">Email *</label><br />
+            <input type="email" id="Email" name="Email" size="50" placeholder="Enter your email address" required="" /><br />
+
+            <label for="telephone">Phone Number *</label><br />
+            <input type="tel" id="telephone" name="Phone" size="8" placeholder="eg.91119111" pattern="[689]\d{7}" required="" /><br />
+
+            <label for="Address">Address *</label><br />
+            <textarea id="Address" rows="3" cols="30" name="Address" autocomplete="on" required=""></textarea><br />
+            
+            <label for="PostalCode">Postal Code *</label><br />
+            <input type="text" maxlength="6" size="6" id="Zip" name="Zip" placeholder="eg.500001" pattern="\d{6}" required=""/><br />
+
+            <label>Number of Travellers: * <span> Seniors get 50% off, Children get 20% off, Infants get 70% off the tour package fees!</span></label><br />
+            <label>Senior(s)</label>
+            <input id="Senior" name="Senior" type="text" placeholder="65 years & above" min="0" pattern="\d" required="" />
+            <label>Adult(s)</label>
+            <input id="Adults" name="Adults" type="text" placeholder="17 - 64 years" min="0" pattern="\d" required="" />
+            <label>Child(ren)</label>
+            <input id="Child" name="Child" type="text" placeholder="3 - 16 years" min="0" pattern="\d" required="" />
+            <label>Infant(s)</label>
+            <input id="Infant" name="Infant" type="text" placeholder="Below 3 years" min="0" required="" /><br />
+
+            <label>Destination Country and Tour *</label><br />
+            <select id="destinationcountry" name="destinationcountry" onclick="calculatetotal()" required="">
+                <option value="">Please select your Wonder Destination and Tour</option>
+                <option value="500">Taj Mahal - Same Day By Car from Delhi</option>
+                <option value="300">Taj Mahal - Same Day By Train from Delhi</option>
+                <option value="550">Taj Mahal - 2 Days from Mumbai</option>
+                <option value="650">Taj Mahal - 2 Days from Goa</option>
+                <option value="347">Machu Picchu - Cusco to Machu Picchu Day Trip</option>
+                <option value="688">Machu Picchu - Inca Trail Short 2-Day Trek to Machu Picchu</option>
+                <option value="600">Machu Picchu - Huchuy Qosqo Trek to Machu Picchu 3 Days - 2 Nights</option>
+                <option value="1000">Roman Colosseum - 3 Days & 2 Nights</option>
+                <option value="127">Stonehenge - Windsor Castle, Stonehenge, Lacok and Bath with Free Lunch Pack</option>
+                <option value="143">Stonehenge - Salisbury, Windsor, Stonehenge & City of Bath with Free Lunch Pack</option>
+                <option value="127.50">Stonehenge - Buckingham Palace and Stonehenge Tour</option>
+            </select><br />
+            <label for="date">Estimated Date of Arrival *</label><br />
+            <input id ="date" type="date" name="date" min="1800-01-01" max="2999-01-01" placeholder="yyyy-mm-dd" required="" /><br />
+            <label>Select your Travel Duration * <span> The number of days you wish to have the  Wonder tour for</span></label><br />
+            <select id="Duration" name="Duration" required="">
+                <option value="">- Days -</option>
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+                <option value="6">6</option>
+                <option value="7">7</option>
+                <option value="8">8</option>
+                <option value="9">9</option>
+                <option value="10">10</option>
+                <option value="11">11</option>
+                <option value="12">12</option>
+                <option value="13">13</option>
+                <option value="14">14</option>
+                <option value="15">15+</option>
+            </select><br />
+            <label for="Remarks">Any Remarks or Enquiries?</label><br />
+            <textarea id="Remarks" rows="3" cols="30" name="Remarks" autocomplete="on"></textarea><br />
+            <div>
+                <p id="totalprice" rows="1"></p>
+            </div>
+            <button id="back" type="button" onclick="window.location.href='./index.html'">Back</button>
+            <button id="submit" type="submit" value="Submit">Submit</button>
+            <button id="reset" type="reset" value="Reset">Reset</button>
+            <div id="glass" class="glass" style="visibility:hidden;">
+                <div class="dialog">
+                    <h3 id="dialogh3">Thank you for the enquiry!</h3>
+                    <p>We will send a confirmation email to you, give us 3 working days to contact you about your enquiry/booking!</p>
+                    <button id="dialogOK" type="Submit" onclick="OK()">OK</button>
+                </div>
+            </div>
+        </div>
+    </form>
+    <div w3-include-HTML="footer.html"></div>
+    <script>
+        w3.includeHTML();
+    </script>
+</body>
+</html>

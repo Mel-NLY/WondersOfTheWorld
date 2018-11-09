@@ -1,0 +1,75 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <meta name="author" content="Ang Yong Xiang Adwin"/>
+    <link rel="stylesheet" href="css/review.css"/>
+    <script src="js/review.js" defer=""></script>
+    <script src="https://www.w3schools.com/lib/w3.js"></script>
+    <title>W.O.T.W | Reviews</title>
+</head>
+<body>
+    <div w3-include-HTML="header.html"></div>
+    <script>
+        w3.includeHTML();
+    </script>
+    <h1>Review</h1>
+    <h4><i><span class="quote-marks">“</span>Your opinion matters to us<span class="quote-marks">”</span></i></h4>
+    <form class="formbody" onsubmit="return PopUp()">
+        <p>
+            <label for="iTitle">Name</label> <br />
+            <select id="iTitle" name="iTitle" required="">
+                <option value="Mr">Mr</option>
+                <option value="Mrs">Mrs</option>
+                <option value="Ms">Ms</option>
+                <option value="Dr">Dr</option>
+            </select>
+            <input id="iName" name="iName" type="text" size="20" placeholder="Enter your name" required />
+        </p> <br />
+        <p>
+            <label for="iEmail">Email</label> <br />
+            <input type="email" id="iEmail" name="iEmail" size="50" placeholder="Enter your email addresses" required />
+        </p>
+        <p>
+            <label for="iLocation">Location</label> <br />
+            <select id="iLocation" name="iLocation" required="">
+                <option value="Taj Mahal">Taj Mahal</option>
+                <option value="Roman Colosseum">Roman Colosseum</option>
+                <option value="Machu Picchu">Machu Picchu</option>
+                <option value="Stonehenge">Stonehenge</option>
+            </select>
+        </p>
+
+        <fieldset class="rating">
+                <legend>Rating</legend>
+                <input type="radio" id="star5" name="rating" value="5" /><label for="star5" title="Great">5 stars</label>
+                <input type="radio" id="star4" name="rating" value="4" /><label for="star4" title="Good">4 stars</label>
+                <input type="radio" id="star3" name="rating" value="3" /><label for="star3" title="Average">3 stars</label>
+                <input type="radio" id="star2" name="rating" value="2" /><label for="star2" title="Bad">2 stars</label>
+                <input type="radio" id="star1" name="rating" value="1" /><label for="star1" title="Terrible">1 star</label>
+        </fieldset> <br/>
+        <p>
+            <label for="iDate">Date of Trip</label><br />
+            <input id="iDate" type="date" name="iDate" min="1980-01-01" max="2999-01-01" placeholder="yyyy-mm-dd" required="" />
+        </p> <br />
+        <p>
+            <label for="iSubject">Subject</label><br />
+            <input type="text" id="iSubject" name="iSubject" size="79" placeholder="Enter your subject" required="" />
+        </p> <br />
+        <p>
+            <label for="iDescription">Description</label><br />
+            <textarea id="iDescription" rows="10" cols="61" name="iDescription" placeholder="Enter your description" required></textarea>
+        </p> <br />
+        <div class="center">
+            <button id="return" type="button" value="return" onclick="window.location.href='./index.html'">Back</button>
+            <button id="submit" type="submit" value="Submit">Submit</button>
+            <button id="reset" type="reset" value="Reset">Reset</button>
+        </div>
+    </form>
+    <div w3-include-HTML="footer.html"></div>
+    <script>
+        w3.includeHTML();
+    </script>
+</body>
+</html>

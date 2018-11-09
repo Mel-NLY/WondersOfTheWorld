@@ -1,0 +1,69 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <meta author="Ning Hui" />
+    <meta description="FEDAssignment" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/styles.css" />
+    <link rel="stylesheet" href="./css/contact.css" />
+    <link rel="icon" type="image/x-icon" href="./media/favicon.png" />
+    <script src="https://www.w3schools.com/lib/w3.js"></script>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+    <title>W.O.T.W | Contact us</title>    
+</head>
+<body background="./media/Contact/airplane(6).jpg">
+    <div w3-include-HTML="header.html"></div>
+    <script>
+        w3.includeHTML();
+    </script>
+    <div id="heading">
+        <h1>Contact us here!</h1>
+    </div>
+    
+    <form class="contact">
+        <div class="section1">
+            <br />
+            <label id="name">Name *</label>
+            <br />
+            <input type="text" id="na" name="name" autocomplete="on" required />
+            <br />
+            <br />
+
+            <label id="email">Email *</label>
+            <br />
+            <input type="text" name="email" id="mail" required />
+            <br />
+            <br />
+
+            <label id="phoneNo">Phone Number (Optional)</label>
+            <br />
+            <input type="text" name="phoneNo" pattern="[689]\d{7}" maxlength="8" id="phone"/>
+            <br />
+            <br />
+            <div>
+                <button class="submit" name="submit" type="submit">Submit</button>
+            </div>
+        </div>
+        <br />
+        <div class="section2">
+            <label id="message">Message *</label>
+            <br />
+            <textarea rows="5" cols="30" id="enquiry" name="message" required></textarea>
+        </div>
+      
+        <br />
+        <br />
+
+        <img src="./media/Contact/map.png" id="map"/>
+        <p>1 Woodlands Industrial Park E1 #03-02, 757724, Singapore
+        <br />6850-3026
+        <br />support@wotw.com</p>
+    </form>
+    <div w3-include-HTML="footer.html"></div>
+    <script>
+        w3.includeHTML();
+    </script>
+</body>
+</html>
